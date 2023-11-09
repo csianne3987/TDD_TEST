@@ -43,20 +43,20 @@ public class UserServiceTest {
 
     @BeforeAll
     void init() {
-        RegistryReq registryReq = new RegistryReq();
+        registryReq = new RegistryReq();
         registryReq.setAccount("account");
         registryReq.setEmail("email");
         registryReq.setName("name");
         registryReq.setPassword("password");
 
-        UserModel userModel = new UserModel();
+        userModel = new UserModel();
         userModel.setAccount(registryReq.getAccount());
         userModel.setEmail(registryReq.getEmail());
         userModel.setId("id");
         userModel.setName(registryReq.getName());
         userModel.setPassword(registryReq.getPassword());
 
-        UserRep userRep = new UserRep();
+        userRep = new UserRep();
         userRep.setAccount(userModel.getAccount());
         userRep.setEmail(userModel.getEmail());
         userRep.setId(userModel.getId());

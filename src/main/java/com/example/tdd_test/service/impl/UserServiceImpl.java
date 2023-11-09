@@ -41,8 +41,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserModel editUser(RegistryReq registryReq) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'editUser'");
+        return null;
     }
 
 }
